@@ -14,6 +14,9 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            HOLA
+            {{ component('test_component', { max: 500 }) }}
+        {% endblock %}
     </body>
 </html>
